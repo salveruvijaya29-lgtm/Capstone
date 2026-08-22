@@ -11,6 +11,7 @@ test('verify page url', async ({ page }) => {
   await expect(page).toHaveURL('https://practice.expandtesting.com/login');
 });
 
+
 test('successful login', async ({ page }) => {
   await page.goto('https://practice.expandtesting.com/login');
   await page.fill('#username', 'practice');
